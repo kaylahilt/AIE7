@@ -27,4 +27,4 @@ There are several ways:
 Q4. What prompting strategies could you use to make the LLM have a more thoughtful, detailed response?
 What is that strategy called?
 
-A4. Chain of Thought (CoT) prompting is a strategy that can be used to make the LLM have a more thoughtful, detailed response by making the LLM iterate through each step, forcing the model to break down a complex problem into discretized pieces, which has been shown to produce more accurate and thoughtful responses, particularly for reasoning steps.
+A4. Chain of Thought (CoT) prompting is a strategy that can be used to make the LLM have a more thoughtful, detailed response by making the LLM iterate through each step, forcing the model to break down a complex problem into discretized pieces, which has been shown to produce more accurate and thoughtful responses, particularly for reasoning steps. To activate, quite literally inject the phrase "think through your response step by step" into the prompt.
