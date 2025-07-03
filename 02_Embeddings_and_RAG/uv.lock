@@ -18,7 +18,6 @@ dependencies = [
     { name = "openai" },
     { name = "pandas" },
     { name = "plotly" },
-    { name = "pypdf2" },
     { name = "python-dotenv" },
     { name = "scikit-learn" },
     { name = "scipy" },
@@ -33,7 +32,6 @@ requires-dist = [
     { name = "openai", specifier = ">=1.59.7" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "plotly", specifier = ">=5.24.1" },
-    { name = "pypdf2", specifier = ">=3.0.0" },
     { name = "python-dotenv", specifier = ">=1.0.1" },
     { name = "scikit-learn", specifier = ">=1.6.1" },
     { name = "scipy", specifier = ">=1.15.1" },
@@ -1239,6 +1237,18 @@ wheels = [
 ]
 
 [[package]]
+name = "nump"
+version = "5.5.5.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c3/f2/f9f583af4bda72bbcdb87ced227b00cc84634cffc9121b3abfe4e3683ee5/nump-5.5.5.5.tar.gz", hash = "sha256:13585da36ad85c93fbbf21a1685b617097d6f2eb67046406085cfea7fbc96fa3", size = 1356, upload-time = "2024-10-05T11:40:51.433Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4d/41/00290fc1f0849553e13690e6a2c7ac5e7ddc4276d8a0f3ddb3cc149cef2d/nump-5.5.5.5-py3-none-any.whl", hash = "sha256:c11380432c5fcfb4c78ca6cfcee452083cb0a97e2d6edbd92caa5058a2f4a576", size = 1108, upload-time = "2024-10-05T11:40:49.829Z" },
+]
+
+[[package]]
 name = "numpy"
 version = "2.3.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1644,15 +1654,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/bb/22/f1129e69d94ffff626bdb5c835506b3a5b4f3d070f17ea295e12c2c6f60f/pyparsing-3.2.3.tar.gz", hash = "sha256:b9c13f1ab8b3b542f72e28f634bad4de758ab3ce4546e4301970ad6fa77c38be", size = 1088608, upload-time = "2025-03-25T05:01:28.114Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/05/e7/df2285f3d08fee213f2d041540fa4fc9ca6c2d44cf36d3a035bf2a8d2bcc/pyparsing-3.2.3-py3-none-any.whl", hash = "sha256:a749938e02d6fd0b59b356ca504a24982314bb090c383e3cf201c95ef7e2bfcf", size = 111120, upload-time = "2025-03-25T05:01:24.908Z" },
-]
-
-[[package]]
-name = "pypdf2"
-version = "3.0.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/9f/bb/18dc3062d37db6c491392007dfd1a7f524bb95886eb956569ac38a23a784/PyPDF2-3.0.1.tar.gz", hash = "sha256:a74408f69ba6271f71b9352ef4ed03dc53a31aa404d29b5d31f53bfecfee1440", size = 227419, upload-time = "2022-12-31T10:36:13.13Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/8e/5e/c86a5643653825d3c913719e788e41386bee415c2b87b4f955432f2de6b2/pypdf2-3.0.1-py3-none-any.whl", hash = "sha256:d16e4205cfee272fbdc0568b68d82be796540b1537508cef59388f839c191928", size = 232572, upload-time = "2022-12-31T10:36:10.327Z" },
 ]
 
 [[package]]
