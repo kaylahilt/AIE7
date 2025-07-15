@@ -10,6 +10,7 @@ dependencies = [
     "langchain-community>=0.3.27",
     "langchain-openai>=0.3.27",
     "langchain-qdrant>=0.2.0",
+    "langchain-tavily>=0.2.8",
     "langgraph==0.5.1",
     "pymupdf>=1.26.3",
     "pyppeteer>=2.0.0",

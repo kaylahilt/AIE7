@@ -12,6 +12,7 @@ dependencies = [
     { name = "langchain-community" },
     { name = "langchain-openai" },
     { name = "langchain-qdrant" },
+    { name = "langchain-tavily" },
     { name = "langgraph" },
     { name = "pymupdf" },
     { name = "pyppeteer" },
@@ -25,6 +26,7 @@ requires-dist = [
     { name = "langchain-community", specifier = ">=0.3.27" },
     { name = "langchain-openai", specifier = ">=0.3.27" },
     { name = "langchain-qdrant", specifier = ">=0.2.0" },
+    { name = "langchain-tavily", specifier = ">=0.2.8" },
     { name = "langgraph", specifier = "==0.5.1" },
     { name = "pymupdf", specifier = ">=1.26.3" },
     { name = "pyppeteer", specifier = ">=2.0.0" },
@@ -1043,6 +1045,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/f2/8c/f006636b4cc2d95ba072a57df3f2f99d8cf7cb47a79cc447a7e3e391f7ee/langchain_qdrant-0.2.0.tar.gz", hash = "sha256:41b8573cbb1b4706f76dc769251d8e6b3e4107ecd5fa97c58141977ec19fba75", size = 21429, upload-time = "2024-11-05T20:51:15.122Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/68/01/22dad84373ba282237a3351547443c9c94c39fe75f71a1759f97cfa89725/langchain_qdrant-0.2.0-py3-none-any.whl", hash = "sha256:8eab5b8a553204ddb809d8183a6f1bc12fc265688592d9d897388f6939c79bf8", size = 23406, upload-time = "2024-11-05T20:51:13.472Z" },
+]
+
+[[package]]
+name = "langchain-tavily"
+version = "0.2.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "langchain" },
+    { name = "langchain-core" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7e/58/fcfaab95201e90a912d5631fd8e5ee70600c1af134127f650ae866e49576/langchain_tavily-0.2.8.tar.gz", hash = "sha256:50d1e2286c2690439d55e7726fa966158437bdfdeff27b9132b6fe2dfce07b85", size = 21195, upload-time = "2025-07-15T18:59:32.995Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ba/b8/29f7a94dc9bf5b307136ce2494cc8fe650ab0d4ff83eaa2b1eb65c17d92e/langchain_tavily-0.2.8-py3-none-any.whl", hash = "sha256:6641d41972719ba8d3d9b8580a6407523911868af127b609a354c109b575328a", size = 25087, upload-time = "2025-07-15T18:59:31.724Z" },
 ]
 
 [[package]]
