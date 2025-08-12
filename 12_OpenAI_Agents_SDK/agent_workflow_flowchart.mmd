@@ -1,0 +1,25 @@
+graph TD
+    A["User Input:<br/>Research Query"] --> B["ResearchManager"]
+    
+    B --> C["PlannerAgent<br/>(GPT-4.1)"]
+    C --> D["Creates search plan with<br/>5-20 search terms"]
+    
+    D --> E["SearchAgent<br/>(with WebSearchTool)"]
+    E --> F["Executes web searches<br/>in parallel batches"]
+    F --> G["Summarizes each result<br/>into 2-3 paragraphs"]
+    
+    G --> H["WriterAgent<br/>(o3-mini reasoning model)"]
+    H --> I["Synthesizes all research<br/>into biotech investment report"]
+    
+    I --> J["Final Report Output"]
+    
+    %% Agent styling with darker backgrounds
+    classDef agent fill:#1565c0,stroke:#0d47a1,stroke-width:3px,color:#ffffff
+    classDef manager fill:#2e7d32,stroke:#1b5e20,stroke-width:3px,color:#ffffff
+    classDef output fill:#ef6c00,stroke:#e65100,stroke-width:2px,color:#ffffff
+    classDef process fill:#424242,stroke:#212121,stroke-width:2px,color:#ffffff
+    
+    class C,E,H agent
+    class B manager
+    class A,J output
+    class D,F,G,I process
