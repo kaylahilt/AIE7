@@ -1,0 +1,8 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "agent": "app.langgraph_server:graph",
+    "client": "app.client_graph:client_graph"
+  },
+  "env": ".env"
+}
