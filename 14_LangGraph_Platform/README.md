@@ -53,10 +53,24 @@ Run the repository and complete the following:
 
 What is the purpose of the `chunk_overlap` parameter when using `RecursiveCharacterTextSplitter` to prepare documents for RAG, and what trade-offs arise as you increase or decrease its value?
 
+#### ✅ Answer:
+
+The purpose of the `chunk_overlap` parameter is to create a buffer to allow adjacent chunks to share common text, increasing the likelihood that individual concepts sitting on the edge of chunks get captured in their entirety, theoretically improving RAG and context retrieval. The trade-offs include increased token counts (and therefore higher processing counts), and potential for duplication of concepts if the chunk_overlap results in the same concept existing in both chunks.
+
 #### ❓ Question:
 
 Your retriever is configured with `search_kwargs={"k": 5}`. How would adjusting `k` likely affect RAGAS metrics such as Context Precision and Context Recall in practice, and why?
 
+#### ✅ Answer:
+
+CONTEXT PRECISION: By increasing `k` you increase the number of passages, so it is possible that more irrelevant passages get included and therefore the relevancy may drop. Therefore context precision may decline by increasing `k`.
+
+CONTEXT RECALL: Increasing `k` typically will increase context recall as there is a broader scope of context that has been recalled and therefore the likelihood of the correct context is higher. However, I imagine this to saturate at some point. In other words, at some point the marginal benefit from increasing `k` is no longer there.
+
 #### ❓ Question:
 
 Compare the `agent` and `agent_helpful` assistants defined in `langgraph.json`. Where does the helpfulness evaluator fit in the graph, and under what condition should execution route back to the agent vs. terminate?
+
+#### ✅ Answer:
+
+The `agent_helpful` assistant's helpfulness evaluator is a node named `helpfulness` that runs immediately after the agent model turn when there are no tool calls, i.e. the tool call procedures have completed and we are approaching the end of the graph. If HELPFULNESS == True then the loop ends, otherwise then the loop continues. The simple `agent` just ends the loop once there are no more tool calls.
